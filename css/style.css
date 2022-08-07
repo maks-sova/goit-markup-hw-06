@@ -60,6 +60,7 @@ img{
     display: flex;
     padding-top: 32px;
     padding-bottom: 32px;
+    outline: none;
    
 }
 .link_info:hover,
@@ -71,6 +72,7 @@ img{
     margin-right: 30px;  
     padding-top: 32px;
     padding-bottom: 32px;
+    outline: none;
 }
 
 .activity:last-child{
@@ -257,6 +259,7 @@ img{
     border: 1px solid #afb1b8;
     border-radius: 4px;
     transition: fill 250ms cubic-bezier(0.4,0,0.2,1);
+    outline: none;
 }
 
 .client-info:last-child{
@@ -294,7 +297,7 @@ img{
     line-height: 1.2;
     letter-spacing: 0.03em;
     color: #2196F3;
-
+    outline: none;
 }
 .colorweb {
     font-family: 'Raleway';
@@ -430,6 +433,7 @@ img{
     margin: auto;
     text-align: center;
     border: none;   
+    outline: none;
     transition: background-color 250ms cubic-bezier(0.4,0,0.2,1);
 }
 .info_button:hover,
@@ -620,6 +624,7 @@ img{
     fill: #AFB1B8;
     justify-content:center;
     position: relative;
+    outline: none;
     transition: background-color 250ms cubic-bezier(0.4,0,0.2,1);
     
 }
@@ -673,6 +678,7 @@ img{
     cursor: pointer;
     margin: auto;
     transition: background-color 250ms cubic-bezier(0.4,0,0.2,1);
+    outline: none;
 }
 .info_buttons:hover,
 .info_buttons:focus
@@ -778,6 +784,7 @@ font-family: 'Roboto';
      fill:#FFFFFF;
      justify-content:center;
      transition: background-color 250ms cubic-bezier(0.4,0,0.2,1);
+     outline: none;
      
  }
  .yyyys{
@@ -931,13 +938,14 @@ font-family: 'Roboto';
     cursor: pointer;
     transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
     resize: none; 
+    padding: 12px 16px;
 }
 
 .modal-textarea:focus{
     border-color:#2196F3;
     outline: none;
 }
- ::placeholder{
+.modal-textarea::placeholder{
     display: flex;
     font-family: 'Roboto';
     font-style: normal;
@@ -945,7 +953,6 @@ font-family: 'Roboto';
     font-size: 12px;
     line-height: 1.16;
     letter-spacing: 0.01em;
-    padding: 12px 16px;
     color: rgba(117, 117, 117, 0.5);
  }
  .modal-svg{
@@ -995,7 +1002,7 @@ font-family: 'Roboto';
     cursor: pointer;
     border: 2px solid #212121;
     margin-left: 14px;
-    margin-right: 8px;
+   
 
 }
 
@@ -1010,7 +1017,6 @@ font-family: 'Roboto';
     line-height: 1.71;
     letter-spacing: 0.03em;
     color: #757575;
-    margin-right: 8px;
     align-items: center;
     
    
@@ -1026,7 +1032,7 @@ font-family: 'Roboto';
     letter-spacing: 0.03em;
     color: #2196F3;
     cursor: pointer;
-    margin-left: 10px;
+    
 
 
 }
@@ -1055,4 +1061,94 @@ font-family: 'Roboto';
     border: none;
     background-position: center;
     background-repeat: no-repeat;
+}
+/* Підпишіться на розсилку*/
+.modal-mailing-list{
+    display: flex;
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 1.14;
+    letter-spacing: 0.03em;
+    text-transform: uppercase;
+
+    color: #FFFFFF;
+    margin-top: 14px;
+}
+.modal-mailing-lists{
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 700;
+    width: 358px;
+    height: 50px;
+    margin-bottom: 20px;
+    justify-content: center; 
+    margin-top: 20px;
+    border: 1px solid rgba(255, 255, 255, 0.3);
+    filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
+    border-radius: 4px;
+    background: #2F303A;
+    cursor: pointer;
+    padding: 15px 16px;
+    margin-right: 12px;
+    transition:  border 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    outline: none;
+}
+.modal-mailing-lists:focus{
+    border: 1px solid rgba(255, 255, 255, 0.3);
+}
+.modal-mailing-button{
+
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 1.87;
+
+    align-items: center;
+    text-align: center;
+    letter-spacing: 0.06em;
+
+    color: #FFFFFF;
+    padding: 10px 62px 10px 28px;
+    background-color: #2196F3;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+    border-radius: 4px;
+    border: none;
+    cursor: pointer;
+    transform: background-color;
+    transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    outline: none;
+}
+.modal-mailing-button:hover,
+.modal-mailing-button:focus{
+    background-color:#188CE8;
+}
+.svg-mailing{
+    position: absolute;
+    align-items: center;
+    justify-content: center;
+    top: 50%;
+    right: 28px;
+    transform: translate(0,-50%);
+   
+}
+.footer-links{
+margin-right: 93px;
+}
+.modal-mailing-span{
+    position: relative;
+   
+}
+.modal-mailing-lists::placeholder{
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 1.25;
+    align-items: center;
+    letter-spacing: 0.03em;
+
+    color: rgba(255, 255, 255, 0.6);
 }
