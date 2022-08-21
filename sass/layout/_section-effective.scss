@@ -1,0 +1,23 @@
+/*Еффективное решение*/
+
+.style_round {
+    @include name('Roboto', normal, 900, 44px , 1.3, 0.06em );
+   
+    text-align: center;
+    text-transform: uppercase;
+    margin: auto;
+    color: #FFFFFF;
+    width: 690px;
+}
+.style__section{
+    padding: 200px 0;
+    text-align: center;
+    background-color: #C4C4C4;
+    background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../images/Img-1.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    max-width: 1600px;
+    height: 600px;
+    margin: 0 auto;
+    
+}

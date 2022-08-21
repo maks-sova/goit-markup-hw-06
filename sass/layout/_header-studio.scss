@@ -1,0 +1,163 @@
+/*Лого страници*/
+.info_main {
+    background: #FFFFFF;
+    font-family: 'Roboto', 'Raleway';
+
+}
+.webStudio {
+    @include name('Raleway',normal ,700 ,26px ,1.2, 0.03em );
+   
+    color: #2196F3;
+    outline: none;
+}
+.colorweb {
+    @include name('Raleway',normal ,700 ,26px ,1.2, 0.03em );
+   
+    color:black;
+}
+
+.studio {
+    @include name(0, 0 ,500 ,14px ,1.14, 0.02em );
+    
+    color: #212121;
+    text-decoration: none;
+    transition:color 250ms cubic-bezier(0.4,0,0.2,1);
+}
+
+.current{
+    color:#2196F3;
+
+}
+.portfolio {
+    @include name(0, 0 ,500 ,14px ,1.14, 0.02em );
+  
+    text-decoration: none;
+    color: #212121;
+    width: 77px;
+    height: 16px;
+    margin-bottom: 14px;
+    transition:color 250ms cubic-bezier(0.4,0,0.2,1);
+}
+.portfolio.current {
+    color: #2196F3;
+   
+}
+.labe::after{
+   content: "";
+   display: flex;
+    width: 100%;
+    height: 4px;
+    border: 1px solid #2196F3;;
+    border-radius: 2px;
+    background: #2196F3;
+}
+
+.contakts {
+    @include name(0, 0 ,500 ,14px ,1.14, 0.02em );
+    
+    text-decoration: none;
+    color: #212121;
+    width: 68px;
+    height: 16px;
+    transition:color 250ms cubic-bezier(0.4,0,0.2,1);
+
+    
+}
+
+.link_info {
+    @include name(0, 0 ,500 ,14px ,1.14, 0.02em );
+    display: flex;
+   
+    color: #757575;
+    list-style: none;
+    text-decoration: none;
+    cursor: pointer;
+    align-items: center;
+    transition: color 250ms cubic-bezier(0.4,0,0.2,1);
+    &:hover,
+    &:focus{
+   color: #2196F3;
+}
+   
+}
+
+.stydi-link{
+    margin-right: 50px;
+    
+}
+.stydi-link:last-child{
+    margin-right: 0;
+}
+
+/*Шапка*/
+.lost:hover,
+.lost:focus{
+    color: #2196F3;
+    
+   
+}
+
+.header-solid{
+    border: 1px solid #EEEEEE;
+}
+.nav-style{
+    display: flex;
+}
+.style-studio{
+    display: flex;
+    list-style: none;
+    
+}
+.style-info{
+    display: flex;
+    margin-left: auto; 
+    list-style: none;
+    justify-content: center;
+    align-items: center;
+  
+}
+
+
+.activity{
+    display: flex;
+    padding-top: 32px;
+    padding-bottom: 32px;
+    outline: none;
+   
+}
+
+.activitys{
+    display: flex;
+    margin-right: 30px;  
+    padding-top: 32px;
+    padding-bottom: 32px;
+    outline: none;
+}
+
+.activity:last-child{
+    margin-right: 0;
+}
+.dio{
+    text-decoration: none;
+    margin-right: 93px;
+    padding-top: 24px;
+    padding-bottom: 25px;
+}
+/*кОНТАКТ пИСЬМО И Телефон*/
+
+.svg-link{
+    margin-right: 10px; 
+    fill: currentColor;
+    &:hover,
+    &:focus{
+    fill: #2196F3;
+}
+}
+
+.style-mailto{
+    margin-right: 30px;
+    &:last-child{
+        margin-right: 0;
+       }
+}
+   

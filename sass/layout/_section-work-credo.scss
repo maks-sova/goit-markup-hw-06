@@ -1,0 +1,76 @@
+/*Пункты в работе*/
+.info_team {
+ 
+    font-style: normal;
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 1.14;
+    letter-spacing: 0.03em;
+    text-transform: uppercase;
+    color: #212121;
+
+}
+
+.text_team {
+    @include name('Roboto', normal, 400, 14px , 1.7, 0.03em );
+    
+    color: #757575;
+}
+
+.work_team {
+    text-align: center;
+    margin-bottom: 50px;
+    @include name('Roboto', normal, 700, 36px , 1.2, 0.03em );
+    
+    color: #212121;
+}
+
+.id_team {
+    @include name('Roboto', normal, 500, 16px , 1.2, 0.03em );
+    
+    color: #212121;
+}
+
+.skil_team {
+    @include name('Roboto', normal, 400, 16px , 1.2, 0.03em );
+   
+    color: #757575;
+}
+.style-paragraph{
+    width: 270px;
+    margin-right: 30px;
+    &:last-child{
+    margin-left: 0;
+}
+}
+.paragraph{
+    display: flex;
+    list-style: none;
+}
+
+.icon::before {
+    content: "";
+    display: block;
+    height: 120px;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-color: #F5F4FA;
+    margin-bottom: 30px;
+
+}
+
+.icon:nth-child(1)::before {
+    background-image: url(../images/antenna\ 1.svg);
+}
+
+.icon:nth-child(2)::before {
+    background-image: url(../images/clock\ 1.svg);
+}
+
+.icon:nth-child(3)::before {
+    background-image: url(../images/diagram\ 1.svg);
+}
+
+.icon:nth-child(4)::before {
+    background-image: url(../images/astronaut\ 1.svg);
+}
